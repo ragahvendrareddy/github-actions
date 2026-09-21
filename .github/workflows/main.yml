@@ -1,7 +1,6 @@
 name:
 on: 
-  push:
-    branch: main
+  push: [push]
     job:
       hello-job:
         runs-on: ubuntu-latest
