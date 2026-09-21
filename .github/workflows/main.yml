@@ -1,12 +1,11 @@
 name:
-on: 
-  push: [push]
-    job:
-      hello-job:
-        runs-on: ubuntu-latest
-        steps:
-          -name: checkout repository
-           uses: actions/checkout@v3
-          -name: print message
-           run: echo "hello guyys"
+on: [push]
+  jobs:
+    hello-job:
+      runs-on: ubuntu-latest
+      steps:
+        -name: checkout repository
+         uses: actions/checkout@v3
+        -name: print a message
+         run: echo "hello guyys"
       
